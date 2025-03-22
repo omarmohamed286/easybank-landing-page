@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 360px;
+  --color-dark-blue: hsl(233, 26%, 24%);
+  --color-lime-green: hsl(136, 65%, 51%);
+  --color-bright-cyan: hsl(192, 70%, 51%);
+  --color-grayish-blue: hsl(233, 8%, 62%);
+  --color-light-grayish-blue: hsl(220, 16%, 96%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --shadow-nav: 50px 150px 500px 50px rgba(0,0,0,1);
+  --default-font-family: "Public Sans", sans-serif;
+  --background-image-overlay-mobile: url(/src/images/bg-intro-mobile.svg);
+  --background-image-overlay-desktop: url(/src/images/bg-intro-desktop.svg);
+}
+
+@layer base {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .request-invite-btn {
+    @apply text-white green-to-cyan-gradient cursor-pointer rounded-full px-5 py-2 font-bold;
+  }
+}
+
+@utility green-to-cyan-gradient {
+  @apply bg-linear-to-r from-lime-green to-bright-cyan hover:opacity-60;
+}
+
+@utility m-desktop {
+  @apply lg:max-xl:mx-20 xl:mx-40;
+}
+
+@utility p-desktop {
+  @apply lg:max-xl:px-20 xl:px-40;
+}
