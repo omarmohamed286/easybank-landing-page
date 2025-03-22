@@ -8,7 +8,7 @@ type Props = {
 const Hero = ({ isHamburgerClicked }: Props) => {
   return (
     <section className="flow-root lg:flex lg:flex-row-reverse lg:items-center">
-      <nav className="bg-white absolute z-10 left-5 right-5 top-20 rounded-lg text-center md:hidden">
+      <nav className="bg-white absolute z-5 left-5 right-5 top-20 rounded-lg text-center md:hidden">
         {isHamburgerClicked ? (
           <ul className="space-y-5 first:pt-10 last:pb-10 shadow-nav text-dark-blue">
             {headerNavLinks.map((link) => (

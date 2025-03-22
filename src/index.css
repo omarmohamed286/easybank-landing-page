@@ -10,7 +10,7 @@
   --color-light-grayish-blue: hsl(220, 16%, 96%);
   --color-very-light-gray: hsl(0, 0%, 98%);
   --color-white: hsl(0, 0%, 100%);
-  --shadow-nav: 50px 150px 500px 50px rgba(0,0,0,1);
+  --shadow-nav: 0px 100px 500px 10px rgba(0,0,0,0.5);
   --default-font-family: "Public Sans", sans-serif;
   --background-image-overlay-mobile: url(/src/images/bg-intro-mobile.svg);
   --background-image-overlay-desktop: url(/src/images/bg-intro-desktop.svg);
